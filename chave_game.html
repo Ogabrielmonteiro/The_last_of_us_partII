@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagem/logo.png" type="image/png">
+    <link rel="stylesheet" href="./CSS/chave_game.css">
+    <title>Recompensas</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="containerNav">
+        <img src="./imagem/logo.png" class="navbarIcon">
+        <ul class="botaoMenu">
+            <li class="linavbar"> <a href="./index.html">Home</a></li>
+            <li class="linavbar "><a href="./index.html #historia">Virus</a></li>
+            <li class="linavbar"><a href="./index.html #personagem">Personagens</a></li>
+            <li class="linavbar login"><a href="./login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Botão para aparecer a div -->
+    <div class="divAlinhamento">
+        <div class="barraLatral">
+            <button class="btnKey" onclick="aparecer()">Pegar Key</button>
+        </div>
+
+        <!-- Skin do game -->
+        <div class="chaveGame" id="divSkin" style="display: none;">
+            <div class="selectMascara">
+                <select id="select_skin" class="selectSkin">
+                    <option value="0">- Escolha a Skin -</option>
+                    <option value="1">Bandit Mask</option>
+                    <option value="2">Sad Clown Mask</option>
+                    <option value="3">Maniac Clown Mask</option>
+                    <option value="4">Biter Mask</option>
+                    <option value="5">Skin Mask</option>
+                    <option value="6">Nightmare Skull Helmet</option>
+                </select>
+                <button onclick="resultado()" class="btnSkin" id="btn_skin" style="display: block;"> Pegar Skin
+                </button>
+
+                <div class="divIMG">
+                    <img src="" id="imgSkin" class="imgSkin">
+                </div>
+                <div id="div_texto" class="divTexto" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function aparecer() {
+        divSkin.style.display = "block"
+    }
+
+    function resultado() {
+        btn_skin.style.display = "none"
+        var skin = select_skin.value
+        imgSkin.src = ""
+
+        if (skin == 1) {
+            imgSkin.src = "https://media.discordapp.net/attachments/399625022051844097/781627460998529074/bandit_mask.jpg?width=638&height=432"
+            div_texto.innerHTML = "5B87-41A8S-A85S-G2D8"
+            div_texto.style.display = "block"
+
+        } else if (skin == 2) {
+            imgSkin.src = "https://media.discordapp.net/attachments/399625022051844097/781627469245055006/sad_clown_mask.jpg?width=578&height=432"
+            div_texto.innerHTML = "8R21-7S55T-A9KJ-E2D9"
+            div_texto.style.display = "block"
+
+        } else if (skin == 3) {
+            imgSkin.src = "https://media.discordapp.net/attachments/399625022051844097/781627463905706034/Maniac_Clown_Mask.jpg?width=658&height=432"
+            div_texto.innerHTML = "8R21-7S55T-E63S-E2D3"
+            div_texto.style.display = "block"
+
+        } else if (skin == 4) {
+            imgSkin.src = "https://media.discordapp.net/attachments/399625022051844097/781627462303481876/Biter_Mask.jpg?width=712&height=432"
+            div_texto.innerHTML = "54S1-41A8S-A85S-G2D8"
+            div_texto.style.display = "block"
+
+        } else if (skin == 5) {
+            imgSkin.src = "https://media.discordapp.net/attachments/399625022051844097/781627458549710858/Skin_Mask.jpg?width=698&height=432"
+            div_texto.innerHTML = "81S3-41A8S-A85S-R584"
+            div_texto.style.display = "block"
+
+        } else if (skin == 6) {
+            imgSkin.src = "https://media.discordapp.net/attachments/399625022051844097/781627466786668564/Nightmare_Skull_Helmet.jpg?width=700&height=432"
+            div_texto.innerHTML = "8O12-41A8S-A85S-594D"
+            div_texto.style.display = "block"
+        } else {
+            alert("Escolha uma skin valida")
+        }
+    }
+
+</script>

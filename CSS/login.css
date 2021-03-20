@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    cursor: url(https://cur.cursors-4u.net/others/oth-9/oth831.cur), auto !important;
+}
+
+body{
+    background: url(../imagem/BackLogin.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Fontes do site */
+@font-face{
+    font-family: headline;
+    src: url(../fonte/HeadlinerNo45DEMO.woff);
+}
+
+@font-face{
+    font-family: navfonte;
+    src: url(../fonte/Deadlist.woff);
+}
+
+@font-face{
+    font-family: textofonte;
+    src: url(../fonte/deadpackDEMO.woff);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerNav {
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.containerNav ul {
+    display: flex;
+}
+
+a {
+    color: white;
+    font-family: navfonte;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.linavbar {  
+    margin-left: 50px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 4px solid grey;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbarIcon {
+    width: 70px;
+}
+
+.linavbar:hover{
+    transition: 0.5s;
+    padding: 15px 35px;
+}
+
+/* Alinhamento das div's cadastro e login */
+.alinCadatroLogin{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12vh;
+}
+
+/* cadastro */
+.alinhamentoCadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 13px 10px 0px 1px  rgba(13,235,212,1);
+    border-radius: 15px;
+}
+
+.containerCadastro{
+    height: 420px;
+    width: 300px;
+    background-color: gray;
+    opacity: 0.9;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoCadastro h1{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 15px;
+    font-size: 50px;
+    font-family:headline ;
+    letter-spacing: 7px;
+}   
+
+.nickName, .email, .senha, .confirSenha{
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.divCadastrar{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btnCadastrar{
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 0px 1px rgba(218,76,169,1);
+    font-family: textofonte;
+}
+
+/* login */
+.alinhamentoLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.containerLogin{
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    opacity: 0.9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 13px 10px 0px 1px rgba(218,76,169,1);
+    border-radius: 15px; 
+}
+
+.textoLogin h1{
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 50px;
+    font-family:headline ;
+    margin-bottom: 20px;
+    letter-spacing: 7px;
+}
+.alinInput .alinLogin{
+    display: flex;
+    align-items: center;
+}
+
+.imglogo{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.in_login, .in_senha{
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.divLogar{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btnlogar{
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 0px 1px rgba(13,235,212,1);
+    font-family: textofonte;
+}

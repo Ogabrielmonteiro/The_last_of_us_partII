@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    cursor: url(https://cur.cursors-4u.net/others/oth-9/oth831.cur), auto !important;
+}
+
+/* Começo da barra lateral */
+
+/* Altura da barra */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Cor da barra */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+  
+/* Hover para trocar a cor da barra */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Fim da barra lateral */
+
+/* Cor de fundo do site */
+body{
+    background-color: #1a1a1a;
+}
+
+/* Fontes do site */
+@font-face{
+    font-family: headline;
+    src: url(../fonte/HeadlinerNo45DEMO.woff);
+}
+
+@font-face{
+    font-family: navfonte;
+    src: url(../fonte/Deadlist.woff);
+}
+
+@font-face{
+    font-family: textofonte;
+    src: url(../fonte/deadpackDEMO.woff);
+}
+
+/* Para descer devagar o site */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerNav {
+    position: absolute;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.containerNav ul {
+    display: flex;
+}
+
+.botaoMenu a {
+    color: white;
+    font-family: navfonte;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.linavbar {  
+    margin-left: 50px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 4px solid grey;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbarIcon {
+    width: 70px;
+}
+
+.linavbar:hover{
+    transition: 0.5s;
+    padding: 15px 35px;
+}
+
+
+/* Seta animada */
+.imgVideo{
+    height: 80px;
+}
+.setaVideo{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 9;
+    animation: seta 1.2s infinite;
+}
+
+@keyframes seta{
+    0% {
+        bottom: 0%;
+    }
+    50%{
+        bottom: 8%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+
+/* Video de inicio */
+.videoBack {
+    position: relative;
+    width: 100%;
+}
+
+
+/* História do vírus */
+.Sobre {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    background-color: #1a1a1a; 
+  
+}
+
+.imgvirus {
+    display: block;
+    max-width: 100%;
+ 
+}
+
+.sobreGame {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    margin-top: -25px;
+}
+
+.sobreGame h3 {
+    color: #0DEBD4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: headline;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.sobreGame p{
+    color: rgb(139, 139, 139);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Imagem da linha do tempo */
+.divhistoria{
+    display: flex;
+    justify-content: center;
+}
+.historiimg{
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Historia dos personagens */
+.containerHist{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 120px;
+}
+
+.tituloGame{
+    font-family: headline;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.historia-cont{
+    display: flex;
+    color: white;
+    margin-top: 70px;
+}
+
+.sobreHistoria h1{
+    display: flex;
+    justify-content: center;
+    color: #0DEBD4;
+}
+
+.imgHistoria{
+    width: 40vh;
+    /* border-radius: 10px; */
+    -webkit-box-shadow: 13px 10px 0px 1px rgba(218,76,169,1);
+}
+
+.textoHistoria{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 30px;
+    text-align: center;
+}
+.textoHistoria p{
+    font-family: 'Dosis', sans-serif;
+    color: rgb(139, 139, 139);
+    font-size: 17px;
+}
+
+.textoHistoria h2{
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: headline;
+    letter-spacing: 4px;
+    background-color: #DA4CA9;
+    width: 150px;
+    height: 50px;
+    -webkit-box-shadow: 11px 10px 0px 1px rgba(13,235,212,1);
+}
+
+/* Imagem sobre curiosidades */
+.curiosidadediv{
+    display: flex;
+    justify-content: center;
+}
+.curiosidadeimg{
+    max-width: 95%;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* Musica do game */
+.musica{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    
+}
+
+.titulomusica{
+    display: flex;
+    justify-content: center;
+    color: #0DEBD4;
+    font-family: headline;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.paragrafomusica{
+    display: flex;
+    justify-content: center;
+}
+
+.paragrafomusica p{
+    color: rgb(139, 139, 139);
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Footer */
+.direitos{
+    background-color: black;
+    height: 28px;
+    margin-top: 7vh;
+    border-radius: 10px;
+}
+
+.direitos p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    padding: 1px;
+}
+
+.direitos p a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
