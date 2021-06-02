@@ -63,7 +63,7 @@ html {
 .containerNav {
     position: absolute;
     width: 100%;
-    height: 11vh;
+    height: 14vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
